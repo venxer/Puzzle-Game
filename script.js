@@ -133,7 +133,6 @@ function shuffle()
         arr[curLength] = arr[ran];
         arr[ran] = temp;
     }
-
     //changes value of each cell
     let pos = 0;
     for (let row = 0; row < COORDINATES.length; row++) 
