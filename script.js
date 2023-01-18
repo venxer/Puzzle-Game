@@ -118,7 +118,7 @@ function shuffle()
 {
     start = true;
     movesMade = 0;
-    document.getElementById("status").innerHTML="";
+    document.querySelector("#status").innerHTML="";
     document.getElementById("score").innerHTML = movesMade;
     let arr = ["00", "01", "02", "03",
                "10", "11", "12", "13",
