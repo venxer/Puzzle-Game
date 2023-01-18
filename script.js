@@ -19,7 +19,7 @@ if(document.URL.includes("puzzle"))
     document.title = localStorage.getItem("img") + " puzzle"
     document.getElementById("score").innerHTML = movesMade;
     document.getElementById("shuffle").addEventListener("click", shuffle);
-    document.getElementById("back").addEventListener("click", () => location.href='Page/home.html');
+    document.getElementById("back").addEventListener("click", () => location.href='Page/index.html');
     displayImage();
 } 
 function swap(firstCoord, secondCoord)
