@@ -99,21 +99,6 @@ function displayImage()
         }  
     }
 }
-function checkWin()
-{
-    let count = 0;
-    for (let row = 0; row < COORDINATES.length; row++) 
-    {
-        for (let col = 0; col < COORDINATES[row].length; col++) 
-        {
-            if(document.getElementById(COORDINATES[row][col]).innerHTML === COORDINATES[row][col])
-            {
-                count++;         
-            }   
-        }  
-    }
-    count === 16 ? win = true: win = false;
-}
 function shuffle()
 {
     start = true;
@@ -144,4 +129,19 @@ function shuffle()
         }  
     }
     displayImage();
+}
+let checkWin = () => 
+{
+    let count = 0;
+    for (let row = 0; row < COORDINATES.length; row++) 
+    {
+        for (let col = 0; col < COORDINATES[row].length; col++) 
+        {
+            if(document.getElementById(COORDINATES[row][col]).innerHTML === COORDINATES[row][col])
+            {
+                count++;         
+            }   
+        }  
+    }
+    count === 16 ? win = true: win = false;
 }
