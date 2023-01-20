@@ -72,11 +72,14 @@ function clicked(coord)
         }
         else
         {
-            let img = document.getElementById(firstCoord);
-            img.style.opacity = "1";
-            secondCoord = coord;
-            isFirst = true;
-            swap(firstCoord, secondCoord);
+            if(coord !== firstCoord)
+            {
+                let img = document.getElementById(firstCoord);
+                img.style.opacity = "1";
+                secondCoord = coord;
+                isFirst = true;
+                swap(firstCoord, secondCoord);
+            }
         }
 
     }
