@@ -21,11 +21,11 @@ h1
     align-items: center;
 }
 img{
-  width: 80%;
-  height: auto;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 table
 {
@@ -46,6 +46,16 @@ td
     color: rgba(0, 0, 0, 0);
     user-select: none;
 }
+.videoDiv
+{
+  text-align: center;
+  padding-top: 150px;
+}
+video
+{
+  width: 400px;
+  height: auto;
+}
 .tableContainer
 {
     text-align: center;
@@ -53,6 +63,11 @@ td
 .info
 {
     text-align: center;
+}
+.buttons
+{
+    margin-top: 1%;
+    margin-bottom: 1%; 
 }
 #score
 {
@@ -70,46 +85,54 @@ td
 {
     font-family: Comic Sans MS;
     font-size: 30px;
-    /* color: white; */
     animation: rainbow 5s infinite;
 }
-@keyframes rainbow {
-    12.5% {
+@keyframes rainbow 
+{
+    12.5% 
+    {
       color: #FF0000;
     }
-    25% {
+    25% 
+    {
       color: #FFA500;
     }
-    37.5% {
+    37.5% 
+    {
       color: #FFFF00;
     }
-    50% {
+    50% 
+    {
       color: #7FFF00;
     }
-    62.5% {
+    62.5% 
+    {
       color: #00FFFF;
     }
-    75% {
+    75% 
+    {
       color: #0000FF;
     }
-    87.5% {
+    87.5% 
+    {
       color: #9932CC;
     }
-    100% {
+    100% 
+    {
       color: #FF1493;
     }
-  }
+}
 button {
-  background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Comic Sans MS";
-  font-size: 15px;
-  height: 40px;
-  line-height: 20px;
-  padding: 10px 16px;
-  user-select: none;
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 16px;
+    user-select: none;
 }
